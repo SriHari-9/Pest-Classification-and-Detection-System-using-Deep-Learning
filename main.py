@@ -1,6 +1,7 @@
 # main.py
-from user.user import app
+import os
+from user import app
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
-    
+    port = int(os.getenv('PORT', 5000))  # Default to 5000 if PORT is not set
+    app.run(host='0.0.0.0', port=port, debug=True)
