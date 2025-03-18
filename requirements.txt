@@ -17,3 +17,4 @@ torch==2.1.1
 torchvision==0.16.1
 tornado==6.3.3
 tqdm==4.66.1
+gunicorn
